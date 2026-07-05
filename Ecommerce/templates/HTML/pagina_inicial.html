@@ -1,0 +1,24 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="carrossel-container">
+    <button class="anterior">&#10094;</button>
+    <div class="carrossel">
+
+      <div class="nivel">
+        <div class="item">
+          <a href="#"><img src="{% static "img/banner1.webp" %}"></a>
+        </div>
+      </div>
+      
+      <div class="nivel">
+        <div class="item">
+          <a href="#"><img src="{% static "img/banner2.webp" %}"></a>
+        </div>
+      </div>
+
+    </div>
+    <button class="proximo">&#10095;</button>
+</div>
+{% endblock content %}
