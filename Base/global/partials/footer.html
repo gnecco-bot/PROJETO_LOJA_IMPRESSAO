@@ -1,0 +1,149 @@
+{% load static %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<footer>
+  <div class="footer-dados">
+    <div class="footer-item">
+      <img src="{% static  "img/andromeda.jpeg" %}" alt="">
+      <ul>
+        <li class='footer-input'>
+          <input type="text" name="" id="" placeholder="Seu E-mail aqui">
+          <button>ASSINAR</button>
+        </li>
+        <li class="footer-input-p">Receba Novidades e Ofertas no seu E-mail</li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <p>QUEM SOMOS</p>
+      <ul>
+        <li>Sobre nós</li>
+        <li>Como começamos</li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <p>REDES SOCIAIS</p>
+      <ul>
+        <li><a href=""><span class="fab fa-instagram"></span> INSTAGRAM</a></li>
+        <li><a href=""><span class="fab fa-youtube"></span> YOUTUBE</a></li>
+        <li><a href=""><span class="fab fa-tiktok"></span> TIKTOK</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-item">
+      <p>SUPORTE TECNICO</p>
+      <ul>
+        <li>Fale Conosco</li>
+        <li>Central de ajuda</li>
+        <li>Minha conta</li>
+        <li>Meus pedidos</li>
+        <li>+55 (11) 99847727</li>
+        <li>andromeda.studio@gmail.com</li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="direitos">
+    <p>© 2026 Iron Studios - TODOS OS DIREITOS RESERVADOS
+
+|
+Ibiza Collectibles Comercio, Importacao Exportacao LTDA 11.815.832/0001-82</p>
+  </div>
+</footer>
+
+<style>
+
+  footer {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-dados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 400px;
+    padding: 0 90px;
+  }
+
+  .footer-item {
+    flex-direction: column;
+  }
+
+  .footer-item p {
+    font-size: 58px;
+    left: 0;
+  }
+
+  .footer-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+  }
+
+  .footer-item input {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    margin: 0;
+  }
+
+  .footer-item input::placeholder {
+    color: #515151;
+  }
+
+  .footer-item button {
+    margin: 0;
+    padding: 10px ;
+    border: none;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+  }
+
+  .footer-item .footer-input-p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer-item ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-item ul li {
+    margin: 15px 0;
+    list-style: none;
+  }
+
+  .footer-item p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .footer-item a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer-item a:hover {
+    color: #ccc;
+  }
+
+  .direitos {
+    padding: 15px;
+  }
+
+  .direitos p {
+    font-size: 12px;
+    margin: 0;
+    color: #ccc;
+    text-align: center;
+  }
+</style>

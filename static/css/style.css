@@ -76,13 +76,12 @@ body {
 .destaque-novidades .item {
     border-radius: 10px 10px 0 0;
     flex-direction: column;
+    border: 1px solid #ccc;
 }
 
 .destaque-novidades img {
-    border: 1px solid #ccc;
     height: 100%;
-    border-radius: 10px 10px 0 0;
-    width: 99.7%;
+    width: 100%;
 }
 
 .destaque-novidades .item .nome-item {
@@ -114,7 +113,7 @@ body {
 .destaque-ver-mais {
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 5px solid #0000006c;
 }
 
 .destaque-ver-mais button {
@@ -126,6 +125,17 @@ body {
     border-radius: 8px;
     color: #fff;
     font-weight: bold;
+}
+
+.secao-recentes {
+    background-color: #dddddd;
+    border-bottom: 5px solid #0000004a;
+    padding-bottom: 15px;
+}
+
+.secao-recentes h2 {
+    margin: 0;
+    padding: 25px 0;
 }
 
 .recente {
@@ -151,7 +161,9 @@ body {
 }
 
 .section-temas {
-    margin: 50px auto;
+    padding: 20px 0 90px 0;
+    background-color: rgb(34, 34, 34);
+    color: white;
 }
 
 .section-temas h2 {
@@ -160,19 +172,18 @@ body {
 
 .temas {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 20px 40px;
-    gap: 20px;
+    margin: 0 80px;
+    gap: 35px;
 }
 
 .temas .tema-item {
     flex-direction: column;
-    max-height: 500px;
     min-height: 400px;
     width: 100%;
     background-color: #ccc;
-    border-radius: 30px;
+    border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
