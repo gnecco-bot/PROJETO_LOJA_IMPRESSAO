@@ -184,6 +184,7 @@ body {
 
 .section-personalizados h2 {
     text-align: center;
+    margin-bottom: 35px;
 }
 
 .temas {
@@ -203,17 +204,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.7s;
+}
+
+.temas .tema-item:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
 .temas .tema-item button {
-    border: none;
-    background-color: black;
+    border: 1px solid rgb(103, 103, 103);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fff;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-/* CSGO ESPECIAL */
+.temas .tema-item button:hover {
+    transform: scale(1.12);
+}
+
+
+/* CSGO */
 
 .section-counter-strike {
     padding: 30px;
@@ -240,14 +255,66 @@ body {
 
 .container-cs {
     display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.container-cs img {
+.container-cs .cs img {
+    display: fixed;
+    left: 0;
     border-radius: 5%;
     height: 600px;
     width: auto;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+}
+
+.itens-cs {
+    height: 600px;
+    width: 900px;
+}
+
+.itens-cs nav {
+    text-align: center;
+    background: none;
+}
+
+.itens-cs nav a {
+    background-color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.itens-cs nav a:hover {
+    background-color: #f1f1f1;
+}
+
+.itens-conteudo-cs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+.itens-conteudo-cs .bloco-cs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.itens-conteudo-cs .bloco-cs img {
+    height: 250px;
+    width: clamp(350px, 25vw, 400px);
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.itens-conteudo-cs .bloco-cs img:hover {
+    transform: scale(1.04);
 }
