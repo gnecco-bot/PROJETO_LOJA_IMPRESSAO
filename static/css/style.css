@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+/* CARROSSEL DE BANNERS ROTATIVOS */
+
 .carrossel-container {
     margin: auto;
     position: relative;
@@ -14,7 +16,7 @@ body {
 .carrossel {
     display: flex;
     transition: transform 0.8s ease-in-out;
-    height: 350px;
+    height: auto;
 }
 
 .nivel {
@@ -60,6 +62,8 @@ body {
     padding-left: 100px;
 
 }
+
+/* DESTAQUES DE MODELOS */
 
 .destaque h2 {
     text-align: center;
@@ -127,10 +131,12 @@ body {
     font-weight: bold;
 }
 
+/* RECEM POSTADOS */
+
 .secao-recentes {
     background-color: #dddddd;
     border-bottom: 5px solid #0000004a;
-    padding-bottom: 15px;
+    padding: 0 20px 15px 20px;
 }
 
 .secao-recentes h2 {
@@ -142,31 +148,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    margin: 10px;
 }
 
 .recente .item {
     flex-direction: column;
-    border: 2px solid #ccc;
+    border: 2px solid #000000;
     border-radius: 10px;
+    transition: 0.3s;
+    background-color: #f4f4f4;
+}
+
+.recente .item:hover {
+    transform: scale(1.08);
+    cursor: pointer;
 }
 
 .recente .item .nome-item {
     width: 100%;
     background-color: black;
     color: white;
-    font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    font-size: 12px;
 }
 
-.section-temas {
+/* PERSONALIZADOS */
+
+.section-personalizados {
     padding: 20px 0 90px 0;
     background-color: rgb(34, 34, 34);
     color: white;
 }
 
-.section-temas h2 {
+.section-personalizados h2 {
     text-align: center;
 }
 
@@ -180,8 +196,8 @@ body {
 
 .temas .tema-item {
     flex-direction: column;
-    min-height: 400px;
-    width: 100%;
+    min-height: 550px;
+    width: 480px;
     background-color: #ccc;
     border-radius: 40px;
     display: flex;
@@ -195,4 +211,43 @@ body {
     color: #fff;
     padding: 10px;
     border-radius: 10px;
+}
+
+/* CSGO ESPECIAL */
+
+.section-counter-strike {
+    padding: 30px;
+    background-color: #FFAE00;
+    height: 800px;
+    border-bottom: 5px solid #0000004a;
+}
+
+.section-counter-strike h1 {
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.section-counter-strike .titulo-cs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-counter-strike .titulo-cs img {
+    height: 90px;
+}
+
+.container-cs {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.container-cs img {
+    border-radius: 5%;
+    height: 600px;
+    width: auto;
+    border: 2px solid #000000;
 }
