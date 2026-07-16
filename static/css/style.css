@@ -237,10 +237,10 @@ body {
     border-bottom: 5px solid #0000004a;
 }
 
-.section-counter-strike h1 {
+/* .section-counter-strike h1 {
     text-align: center;
     color: #f4f4f4;
-}
+} */
 
 .section-counter-strike .titulo-cs {
     display: flex;
@@ -316,5 +316,92 @@ body {
 }
 
 .itens-conteudo-cs .bloco-cs img:hover {
+    transform: scale(1.04);
+}
+
+/* TF */
+
+.section-team-fortress {
+    padding: 30px;
+    background-color: rgb(137, 73, 29);
+    height: 800px;
+    border-bottom: 5px solid #0000004a;
+}
+
+.section-team-fortress .titulo-tf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section-team-fortress .titulo-tf img {
+    height: 90px;
+}
+
+.container-tf {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-tf .tf img {
+    display: fixed;
+    left: 0;
+    border-radius: 5%;
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(110, 71, 0, 0.9);
+
+}
+
+.itens-tf {
+    height: 600px;
+    width: 900px;
+}
+
+.itens-tf nav {
+    text-align: center;
+    background: none;
+}
+
+.itens-tf nav a {
+    background-color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.itens-tf nav a:hover {
+    background-color: #f1f1f1;
+}
+
+.itens-conteudo-tf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+.itens-conteudo-tf .bloco-tf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.itens-conteudo-tf .bloco-tf img {
+    height: 250px;
+    width: clamp(350px, 25vw, 400px);
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.itens-conteudo-tf .bloco-tf img:hover {
     transform: scale(1.04);
 }

@@ -53,3 +53,59 @@ function navCs(pag) {
     }
     paginaSelecionada.innerHTML = conteudo;
 };
+
+function navTf(pag) {
+    const paginaSelecionada = document.getElementById('itens-conteudo-tf');
+    let conteudo = '';
+    switch (pag) {
+        case 'figures':
+            conteudo = `
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            </div>
+            `
+            break;
+        case 'maquetes':
+            conteudo = `
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            </div>
+            `
+            break;
+        case 'mascaras':
+            conteudo = `
+            <div class="bloco-tf">
+                <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://images.steamusercontent.com/ugc/597038027857448845/A0CAD9DEC2F92C3E5EA97750B949798678089493/" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmdwkl50ByVMvpBm4t6opu0R5i3tl3QbJdY_fuqxI-O2GVc16GUfE5uEp&s=10" alt="">
+            </div>
+            <div class="bloco-tf">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQIlGec5sPpwmuYIUel7BlckMhVx3QHuE5QpdqapzK4HQcNrgWCG-DtVX&s=10" alt="">
+            </div>
+                `
+            break;
+    }
+    paginaSelecionada.innerHTML = conteudo;
+};
