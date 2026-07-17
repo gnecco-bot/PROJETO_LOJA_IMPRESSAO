@@ -319,12 +319,72 @@ body {
     transform: scale(1.09);
 }
 
+.titulo-secao-games {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.2);
+    font-size: 30px;
+    border-radius: 0 0 100px 100px;
+}
+
+@keyframes oscilarSombra {
+    0% {
+        /* Estado "Apagado": Sombra bem curta e quase invisível */
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    }
+
+    100% {
+        /* Estado "Aceso": Sombra expandida e com brilho máximo */
+        text-shadow: 0 2px 20px rgba(255, 0, 0, 1);
+    }
+}
+
+.titulo-secao-games h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-weight: 300;
+    color: #fff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Configuração do efeito de luz piscando e brilhando */
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /* Estado Ligado (Brilho Forte) */
+        text-shadow:
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 5px #fff,
+            0 0 8px #fff;
+    }
+
+    20%,
+    24%,
+    55% {
+        /* Estado Desligado (Falha/Pisca Rápido) */
+        text-shadow: none;
+        color: #fff;
+        /* Cor do tubo apagado */
+    }
+}
+
 /* COUNTER STRIKE */
 
 .section-games {
     padding: 0 30px 50px 30px;
     background-color: #FFAE00;
-    height: 820px;
+    height: 900px;
     border-bottom: 5px solid #0000004a;
 }
 

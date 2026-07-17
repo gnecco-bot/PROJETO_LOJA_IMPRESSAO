@@ -50,7 +50,7 @@ function gameClick(valor) {
             .section-games {
                 padding: 0 30px 50px 30px;
                 background-color: #FFAE00;
-                height: 820px;
+                height: 900px;
                 border-bottom: 5px solid #0000004a;
             }
 
@@ -104,7 +104,7 @@ function gameClick(valor) {
                 .section-games {
                     padding: 0 30px 50px 30px;
                     background-color: rgb(137, 73, 29);
-                    height: 820px;
+                    height: 900px;
                     border-bottom: 5px solid #0000004a;
                 }
 
@@ -159,7 +159,7 @@ function gameClick(valor) {
                 .section-games {
                     padding: 0 30px 50px 30px;
                     background-color: rgb(10, 52, 17);
-                    height: 820px;
+                    height: 900px;
                     border-bottom: 5px solid #0000004a;
                 }
 
