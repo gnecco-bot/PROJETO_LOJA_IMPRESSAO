@@ -68,6 +68,70 @@ function gameClick(valor) {
             `
             break;
 
+        case 'god':
+            conteudo = `
+            <div class="titulo-cs">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/4/4b/God_of_War_2018_logo.png" alt="">
+            </div>
+            <div class="container-cs">
+                <div class="cs">
+                    <img src="https://cdn.wccftech.com/wp-content/uploads/2015/04/GOW_Logo_large_III_DL_01_b.png" alt="">
+                </div>
+                <div class="itens-cs">
+                    <nav>
+                    <a href="#section-counter-strike" onclick="navCs('figures')">FIGURES</a>
+                    <a href="#section-counter-strike" onclick="navCs('maquetes')">MAQUETES</a>
+                    <a href="#section-counter-strike" onclick="navCs('mascaras')">MASCARAS</a>
+                    </nav>
+                    <div class='itens-conteudo-cs' id="itens-conteudo-cs">
+                        <div class="bloco-cs">
+                            <div class="bloco-img">
+                                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>ROMANOV</p>
+                        </div>
+                        <div class="bloco-cs">
+                            <div class="bloco-img">
+                                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>TERRORISTA</p>
+                        </div>
+                        <div class="bloco-cs">
+                            <div class="bloco-img">
+                                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>TIKEN</p>
+                        </div>
+                        <div class="bloco-cs">
+                            <div class="bloco-img">
+                                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>FIGURE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+            .section-games {
+                background-color: #b1b1b1;
+            }
+
+            .section-games .titulo-cs {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+                background-color: none;
+            }
+
+            .section-games .titulo-cs img {
+                height: 90px;
+            }
+            </style>
+            `
+            break;
+
         case 'tf':
             conteudo = `
                 <div class="titulo-tf">
@@ -85,16 +149,28 @@ function gameClick(valor) {
                     </nav>
                     <div class='itens-conteudo-tf' id="itens-conteudo-tf">
                         <div class="bloco-tf">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+                            <div class="bloco-img">
+                            <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>ROMANOV</p>
                         </div>
                         <div class="bloco-tf">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+                            <div class="bloco-img">
+                            <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>TERRORISTA</p>
                         </div>
                         <div class="bloco-tf">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+                            <div class="bloco-img">
+                            <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>TIKEN</p>
                         </div>
                         <div class="bloco-tf">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+                            <div class="bloco-img">
+                            <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+                            </div>
+                            <p>FIGURE</p>
                         </div>
                     </div>
                     </div>
@@ -188,49 +264,85 @@ function navCs(valor) {
         case 'figures':
             conteudo = `
             <div class="bloco-cs">
-                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
             `
             break;
         case 'maquetes':
             conteudo = `
             <div class="bloco-cs">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZ7vOy_KZP9iTt5Gs9swVLE-v-ikGeaXSsD-jbvIITA&s=10" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
             `
             break;
         case 'mascaras':
             conteudo = `
             <div class="bloco-cs">
-                <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
+            <div class="bloco-img">
+              <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
             </div>
-            <div class="bloco-cs">
-                <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-cs">
+            <div class="bloco-img">
+              <img src="https://fbi.cults3d.com/uploaders/13475163/photo-file/9266c213-f406-4129-a489-ac95b7ba4f85/20221215_141247.jpg" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
                 `
             break;
     }
@@ -244,49 +356,85 @@ function navTf(valor) {
         case 'figures':
             conteudo = `
             <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2fJVH8RdcBggeKAAO3kudDlIxeUQQw4cpkMWsIdwhorNgofIAT7hx4Ps&s=10" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
             `
             break;
         case 'maquetes':
             conteudo = `
             <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4erJwIbS0XIU0CEmV2LLtnGeve00kuDsd_vGHzrmQbiYFlbJNRzSkE0&s=10" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
             `
             break;
         case 'mascaras':
             conteudo = `
             <div class="bloco-tf">
-                <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
+            <div class="bloco-img">
+              <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://images.steamusercontent.com/ugc/597038027857448845/A0CAD9DEC2F92C3E5EA97750B949798678089493/" alt="">
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmdwkl50ByVMvpBm4t6opu0R5i3tl3QbJdY_fuqxI-O2GVc16GUfE5uEp&s=10" alt="">
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
             </div>
-            <div class="bloco-tf">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQIlGec5sPpwmuYIUel7BlckMhVx3QHuE5QpdqapzK4HQcNrgWCG-DtVX&s=10" alt="">
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco-tf">
+            <div class="bloco-img">
+              <img src="https://www.propfortress.com/cdn/shop/files/nohmercy_2.jpg?v=1774256667" alt="">
             </div>
+            <p>FIGURE</p>
+          </div>
                 `
             break;
     }

@@ -261,9 +261,28 @@ body {
     cursor: pointer;
 }
 
+.games-nav .god {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 190);
+}
+
+.games-nav .god:hover {
+    cursor: pointer;
+}
+
 .games-nav .tf {
     background-color: rgb(137, 73, 29);
     color: white;
+}
+
+.games-nav .hollow {
+    background-color: darkblue;
+    color: white;
+}
+
+.games-nav .hollow:hover {
+    background-color: darkblue;
+    cursor: pointer;
 }
 
 .games-nav .tf:hover {
@@ -397,7 +416,6 @@ body {
 
 .section-games .titulo-cs img {
     padding: 0 30px 30px 30px;
-    background-color: #FFAE00;
     height: 90px;
 }
 
@@ -412,9 +430,10 @@ body {
     left: 0;
     border-radius: 5%;
     height: 600px;
-    width: auto;
-    border: 1px solid #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    width: 400px;
+    object-fit: cover;
+    /* border: 1px solid #000000; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); */
 
 }
 
@@ -473,7 +492,7 @@ body {
     transform: scale(1.04);
 }
 
-.itens-conteudo-cs .bloco-cs p {
+#conteudo_game p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-align: center;
@@ -537,7 +556,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    flex-direction: column;
+}
+
+
+.itens-conteudo-tf .bloco-tf .bloco-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .itens-conteudo-tf .bloco-tf img {
