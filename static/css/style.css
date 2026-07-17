@@ -228,28 +228,116 @@ body {
 }
 
 
-/* CSGO */
+/* SEÇÃO GAMES */
 
-.section-counter-strike {
-    padding: 30px;
+.games-nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: none;
+    top: 5%;
+}
+
+.games-nav a {
+    background-color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    /* border-right: 1px solid #010101; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.games-nav .cs {
+    border-radius: 0 0 0 8px;
     background-color: #FFAE00;
-    height: 800px;
+}
+
+.games-nav .cs:hover {
+    background-color: #FFAE00;
+    cursor: pointer;
+}
+
+.games-nav .tf {
+    background-color: rgb(137, 73, 29);
+    color: white;
+}
+
+.games-nav .tf:hover {
+    background-color: rgb(137, 73, 29);
+    cursor: pointer;
+}
+
+.games-nav .lol {
+    background-color: #005A5B;
+    color: #ffee00;
+}
+
+.games-nav .lol:hover {
+    background-color: #005A5B;
+    cursor: pointer;
+}
+
+.games-nav .valorant {
+    background-color: #f4f4f4;
+    color: rgb(217, 74, 74);
+}
+
+.games-nav .valorant:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.games-nav .cod {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+.games-nav .cod:hover {
+    background-color: rgb(42, 42, 42);
+    cursor: pointer;
+}
+
+.games-nav .fortnite {
+    background-color: rgb(42, 112, 158);
+    color: white;
+    border: none;
+    border-radius: 0 0 8px 0;
+}
+
+.games-nav .fortnite:hover {
+    background-color: rgb(42, 112, 158);
+    cursor: pointer;
+}
+
+
+.games-nav a:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.09);
+}
+
+/* COUNTER STRIKE */
+
+.section-games {
+    padding: 0 30px 50px 30px;
+    background-color: #FFAE00;
+    height: 820px;
     border-bottom: 5px solid #0000004a;
 }
 
-/* .section-counter-strike h1 {
-    text-align: center;
-    color: #f4f4f4;
-} */
-
-.section-counter-strike .titulo-cs {
+.section-games .titulo-cs {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
-.section-counter-strike .titulo-cs img {
+.section-games .titulo-cs img {
+    padding: 0 30px 30px 30px;
+    background-color: #FFAE00;
     height: 90px;
 }
 
@@ -302,10 +390,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    flex-direction: column;
 }
 
-.itens-conteudo-cs .bloco-cs img {
+.itens-conteudo-cs .bloco-cs .bloco-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itens-conteudo-cs .bloco-cs .bloco-img img {
     height: 250px;
     width: clamp(350px, 25vw, 400px);
     object-fit: cover;
@@ -319,25 +413,19 @@ body {
     transform: scale(1.04);
 }
 
-/* TF */
-
-.section-team-fortress {
-    padding: 30px;
-    background-color: rgb(137, 73, 29);
-    height: 800px;
-    border-bottom: 5px solid #0000004a;
+.itens-conteudo-cs .bloco-cs p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 3px 15px;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
-.section-team-fortress .titulo-tf {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.section-team-fortress .titulo-tf img {
-    height: 90px;
-}
+/* TEAM FORTRESS */
 
 .container-tf {
     display: flex;
@@ -403,5 +491,71 @@ body {
 }
 
 .itens-conteudo-tf .bloco-tf img:hover {
+    transform: scale(1.04);
+}
+
+/* LEAGUE OF LEGENDS  */
+
+.container-lol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-lol .lol img {
+    display: fixed;
+    left: 0;
+    border-radius: 5%;
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.itens-lol {
+    height: 600px;
+    width: 900px;
+}
+
+.itens-lol nav {
+    text-align: center;
+    background: none;
+}
+
+.itens-lol nav a {
+    background-color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.itens-lol nav a:hover {
+    background-color: #f1f1f1;
+}
+
+.itens-conteudo-lol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+.itens-conteudo-lol .bloco-lol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.itens-conteudo-lol .bloco-lol img {
+    height: 250px;
+    width: clamp(350px, 25vw, 400px);
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.itens-conteudo-lol .bloco-lol img:hover {
     transform: scale(1.04);
 }
