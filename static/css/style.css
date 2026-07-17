@@ -407,25 +407,25 @@ body {
     border-bottom: 5px solid #0000004a;
 }
 
-.section-games .titulo-cs {
+.section-games .titulo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-.section-games .titulo-cs img {
+.section-games .titulo img {
     padding: 0 30px 30px 30px;
     height: 90px;
 }
 
-.container-cs {
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.container-cs .cs img {
+.container .banner img {
     display: fixed;
     left: 0;
     border-radius: 5%;
@@ -437,17 +437,17 @@ body {
 
 }
 
-.itens-cs {
+.itens {
     height: 600px;
     width: 900px;
 }
 
-.itens-cs nav {
+.itens nav {
     text-align: center;
     background: none;
 }
 
-.itens-cs nav a {
+.itens nav a {
     background-color: white;
     padding: 10px 35px;
     text-decoration: none;
@@ -455,30 +455,30 @@ body {
     color: black;
 }
 
-.itens-cs nav a:hover {
+.itens nav a:hover {
     background-color: #f1f1f1;
 }
 
-.itens-conteudo-cs {
+.itens-conteudo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
 }
 
-.itens-conteudo-cs .bloco-cs {
+.itens-conteudo .bloco {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.itens-conteudo-cs .bloco-cs .bloco-img {
+.itens-conteudo .bloco .bloco-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.itens-conteudo-cs .bloco-cs .bloco-img img {
+.itens-conteudo .bloco .bloco-img img {
     height: 250px;
     width: clamp(350px, 25vw, 400px);
     object-fit: cover;
@@ -488,7 +488,7 @@ body {
     transition: 0.3s;
 }
 
-.itens-conteudo-cs .bloco-cs img:hover {
+.itens-conteudo .bloco img:hover {
     transform: scale(1.04);
 }
 
