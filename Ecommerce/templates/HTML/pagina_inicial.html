@@ -145,7 +145,7 @@
     <a class="cs" onclick="gameClick('cs')">CS 2</a>
     <a class="god" onclick="gameClick('god')">GOD</a>
     <a class="tf" onclick="gameClick('tf')">TF 2</a>
-    <a class="hollow" onclick="gameClick('tf')">HOLLOW</a>
+    <a class="hollow" onclick="gameClick('hollow')">HOLLOW</a>
     <a class="lol" onclick="gameClick('lol')">LOL</a>
     <a class="valorant" onclick="gameClick('valorant')">VALORANT</a>
     <a class="cod" onclick="gameClick('cod')">COD</a>
@@ -161,9 +161,9 @@
       </div>
       <div class="itens">
         <nav>
-          <a href="#section-counter-strike" onclick="navCs('figures')">FIGURES</a>
-          <a href="#section-counter-strike" onclick="navCs('maquetes')">MAQUETES</a>
-          <a href="#section-counter-strike" onclick="navCs('mascaras')">MASCARAS</a>
+          <a href="#section-games" onclick="navCs('figures')">FIGURES</a>
+          <a href="#section-games" onclick="navCs('maquetes')">MAQUETES</a>
+          <a href="#section-games" onclick="navCs('mascaras')">MASCARAS</a>
         </nav>
         <div class='itens-conteudo' id="itens-conteudo">
           <div class="bloco">
@@ -196,6 +196,59 @@
   </div>
 </section>
 
+<section class="section-comics">
+  <div class="titulo-secao-comics">
+    <h1>COMICS 3D</h1>
+  </div>
+  <nav class="comics-nav">
+    <a class="marvel" onclick="comicClick('marvel')">MARVEL</a>
+    <a class="dc" onclick="comicClick('dc')">DC</a>
+  </nav>
+  <div id="conteudo_comic">
+    <div class="titulo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Marvel_Logo.svg" alt="">
+    </div>
+    <div class="container">
+      <div class="itens">
+        <nav>
+          <a href="#section-games" onclick="navCs('figures')">FIGURES</a>
+          <a href="#section-games" onclick="navCs('maquetes')">MAQUETES</a>
+          <a href="#section-games" onclick="navCs('mascaras')">MASCARAS</a>
+        </nav>
+        <div class='itens-conteudo' id="itens-conteudo">
+          <div class="bloco">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            </div>
+            <p>ROMANOV</p>
+          </div>
+          <div class="bloco">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            </div>
+            <p>TERRORISTA</p>
+          </div>
+          <div class="bloco">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            </div>
+            <p>TIKEN</p>
+          </div>
+          <div class="bloco">
+            <div class="bloco-img">
+              <img src="https://makerworld.bblmw.com/makerworld/model/US4d9e136c3df811/design/2025-02-16_e8c4a0b5b82d2.jpg?x-oss-process=image/resize,w_1000/format,webp" alt="">
+            </div>
+            <p>FIGURE</p>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP94EBsb34Q6cxmYZp52e_zFzoexasXPwgxjWP7HMKMISz3FrBqyseT5k&s=10" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section-personalizados">
   <h2>TRABALHOS PERSONALIZADOS</h2>
   <div class="temas">
@@ -220,6 +273,31 @@
 
 
 
+<script> 
+  const cs = `{% include "global/partials/home/games/cs/cs.html" %}`;
+  const csFigure = `{% include "global/partials/home/games/cs/csBloco/figure.html" %}`;
+  const csMaquete = `{% include "global/partials/home/games/cs/csBloco/maquete.html" %}`;
+  const csMascara = `{% include "global/partials/home/games/cs/csBloco/mascara.html" %}`;
 
+  const god = `{% include "global/partials/home/games/god/god.html" %}`;
+  const godFigure = `{% include "global/partials/home/games/god/godBloco/figure.html" %}`;
+  const godMaquete = `{% include "global/partials/home/games/god/godBloco/maquete.html" %}`;
+  const godMascara = `{% include "global/partials/home/games/god/godBloco/mascara.html" %}`;
+
+  const tf = `{% include "global/partials/home/games/tf/tf.html" %}`;
+  const tfFigure = `{% include "global/partials/home/games/tf/tfBloco/figure.html" %}`;
+  const tfMaquete = `{% include "global/partials/home/games/tf/tfBloco/maquete.html" %}`;
+  const tfMascara = `{% include "global/partials/home/games/tf/tfBloco/mascara.html" %}`;
+
+  const hollow = `{% include "global/partials/home/games/hollow/hollow.html" %}`;
+  const hollowFigure = `{% include "global/partials/home/games/hollow/hollowBloco/figure.html" %}`;
+  const hollowMaquete = `{% include "global/partials/home/games/hollow/hollowBloco/maquete.html" %}`;
+  const hollowMascara = `{% include "global/partials/home/games/hollow/hollowBloco/mascara.html" %}`;
+
+  const lol = `{% include "global/partials/home/games/lol/lol.html" %}`;
+  const lolFigure = `{% include "global/partials/home/games/lol/lolBloco/figure.html" %}`;
+  const lolMaquete = `{% include "global/partials/home/games/lol/lolBloco/maquete.html" %}`;
+  const lolMascara = `{% include "global/partials/home/games/lol/lolBloco/mascara.html" %}`;
+</script>
 <script src="{% static "js/home.js" %}"></script>
 {% endblock content %}

@@ -342,8 +342,10 @@ body {
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 255, 0.2);
+    border: 2px solid red;
+    border-top: none;
     font-size: 30px;
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 30px 30px;
 }
 
 @keyframes oscilarSombra {
@@ -397,8 +399,6 @@ body {
         /* Cor do tubo apagado */
     }
 }
-
-/* COUNTER STRIKE */
 
 .section-games {
     padding: 0 30px 50px 30px;
@@ -504,37 +504,167 @@ body {
     border-radius: 10px;
 }
 
-/* TEAM FORTRESS */
+/* SEÇÃO COMICS */
 
-.container-tf {
+.comics-nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: none;
+    top: 5%;
+}
+
+.comics-nav a {
+    background-color: white;
+    padding: 10px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+    /* border-right: 1px solid #010101; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.comics-nav .marvel {
+    background-color: red;
+    color: white;
+    border-radius: 0 0 0 8px;
+}
+
+.comics-nav .marvel:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.comics-nav .dc {
+    background-color: blue;
+    color: white;
+    border-radius: 0 0 8px 0;
+}
+
+.comics-nav .dc:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.comics-nav a:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.09);
+}
+
+.titulo-secao-comics {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.2);
+    font-size: 30px;
+    border: 2px solid red;
+    border-top: none;
+    border-radius: 0 0 30px 30px;
+}
+
+@keyframes oscilarSombra {
+    0% {
+        /* Estado "Apagado": Sombra bem curta e quase invisível */
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
+    }
+
+    100% {
+        /* Estado "Aceso": Sombra expandida e com brilho máximo */
+        text-shadow: 0 2px 20px rgba(255, 0, 0, 1);
+    }
+}
+
+.titulo-secao-comics h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-weight: 300;
+    color: #fff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Configuração do efeito de luz piscando e brilhando */
+@keyframes flicker {
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /* Estado Ligado (Brilho Forte) */
+        text-shadow:
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 1px #fff,
+            0 0 5px #fff,
+            0 0 8px #fff;
+    }
+
+    20%,
+    24%,
+    55% {
+        /* Estado Desligado (Falha/Pisca Rápido) */
+        text-shadow: none;
+        color: #fff;
+        /* Cor do tubo apagado */
+    }
+}
+
+.section-comics {
+    padding: 0 30px 50px 30px;
+    background-color: rgb(82, 0, 0);
+    height: 900px;
+    border-bottom: 5px solid #0000004a;
+}
+
+.section-comics .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.section-comics .titulo img {
+    padding: 0 30px 30px 30px;
+    height: 90px;
+}
+
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.container-tf .tf img {
+.container .banner img {
     display: fixed;
     left: 0;
     border-radius: 5%;
     height: 600px;
     width: 400px;
     object-fit: cover;
-    border: 1px solid #000000;
-    box-shadow: 0 0 10px rgba(110, 71, 0, 0.9);
+    /* border: 1px solid #000000; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); */
 
 }
 
-.itens-tf {
+.itens {
     height: 600px;
     width: 900px;
 }
 
-.itens-tf nav {
+.itens nav {
     text-align: center;
     background: none;
 }
 
-.itens-tf nav a {
+.itens nav a {
     background-color: white;
     padding: 10px 35px;
     text-decoration: none;
@@ -542,106 +672,51 @@ body {
     color: black;
 }
 
-.itens-tf nav a:hover {
+.itens nav a:hover {
     background-color: #f1f1f1;
 }
 
-.itens-conteudo-tf {
+.itens-conteudo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
 }
 
-.itens-conteudo-tf .bloco-tf {
+.itens-conteudo .bloco {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-
-.itens-conteudo-tf .bloco-tf .bloco-img {
+.itens-conteudo .bloco .bloco-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.itens-conteudo-tf .bloco-tf img {
+.itens-conteudo .bloco .bloco-img img {
     height: 250px;
     width: clamp(350px, 25vw, 400px);
     object-fit: cover;
     border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     transition: 0.3s;
 }
 
-.itens-conteudo-tf .bloco-tf img:hover {
+.itens-conteudo .bloco img:hover {
     transform: scale(1.04);
 }
 
-/* LEAGUE OF LEGENDS  */
-
-.container-lol {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container-lol .lol img {
-    display: fixed;
-    left: 0;
-    border-radius: 5%;
-    height: 600px;
-    width: 400px;
-    object-fit: cover;
-}
-
-.itens-lol {
-    height: 600px;
-    width: 900px;
-}
-
-.itens-lol nav {
-    text-align: center;
-    background: none;
-}
-
-.itens-lol nav a {
-    background-color: white;
-    padding: 10px 35px;
-    text-decoration: none;
+#conteudo_comic p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    color: black;
-}
-
-.itens-lol nav a:hover {
-    background-color: #f1f1f1;
-}
-
-.itens-conteudo-lol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
-}
-
-.itens-conteudo-lol .bloco-lol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.itens-conteudo-lol .bloco-lol img {
-    height: 250px;
-    width: clamp(350px, 25vw, 400px);
-    object-fit: cover;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    transition: 0.3s;
-}
-
-.itens-conteudo-lol .bloco-lol img:hover {
-    transform: scale(1.04);
+    text-align: center;
+    color: white;
+    margin: 0 0 10px 0;
+    padding: 3px 15px;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
