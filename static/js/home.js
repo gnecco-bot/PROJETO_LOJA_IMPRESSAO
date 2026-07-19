@@ -1,3 +1,13 @@
+document.getElementById('categorias').addEventListener('click', () => {
+    const menu = document.getElementById('menu')
+    menu.style.display = 'block';
+});
+
+function fecharModal() {
+    const menu = document.getElementById('menu')
+    menu.style.display = 'none';
+}
+
 function gameClick(valor) {
     const pag = document.getElementById('conteudo_game');
     let conteudo = '';
