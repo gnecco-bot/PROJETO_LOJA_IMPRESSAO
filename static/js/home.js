@@ -3,9 +3,15 @@ document.getElementById('categorias').addEventListener('click', () => {
     menu.style.display = 'block';
 });
 
-function fecharModal() {
-    const menu = document.getElementById('menu')
+const menu = document.getElementById('menu')
+function fecharMenu() {
     menu.style.display = 'none';
+}
+
+window.onclick = function (event) {
+    if (event.target === menu) {
+        menu.style.display = 'none';
+    }
 }
 
 function gameClick(valor) {

@@ -133,33 +133,55 @@ body {
 
 #menu {
     display: none;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-}
-
-.menu-container {
     position: fixed;
-    display: block;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 260px;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
     overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-container {
+    width: 20vw;
+    height: 100%;
     background: rgb(18, 18, 18);
     transition: all 300ms ease-in-out;
     color: white;
     padding: 0 15px;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: arrasta-menu 0.1s linear;
+}
+
+@keyframes arrasta-menu {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0.2;
+    }
+
+}
+
+.menu-container .saudacao {
+    padding: 25px 0 0 0;
 }
 
 .menu-container h2 {
     border-bottom: 1px solid #ccc;
-    margin-bottom: 5px;
+}
+
+.menu-container .fechar {
+    font-size: 36px;
+    float: right;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-container .fechar:hover {
+    transform: scale(1.7);
+    color: white;
 }
 
 .menu-container a {
