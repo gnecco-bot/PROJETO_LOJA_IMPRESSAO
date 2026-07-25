@@ -2,3 +2,6 @@ from django.shortcuts import render
 
 def pagina_inicial(request):
     return render(request, 'HTML/pagina_inicial.html')
+
+def pagina_produto(request):
+    return render(request, 'HTML/pagina_produto.html')

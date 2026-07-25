@@ -1,4 +1,36 @@
+{% load static %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="scroller-fade">
+  <div class="conteudo-fade">No ato da primeira compra o frete será gratuito com direito a um brinde!</div>
+</div>
+
+<nav>
+  <div class="line-1">
+    <p class="home">
+      <a href="#home">ANDROMEDA STUDIO</a>
+    </p>
+    <div class="input">
+      <input type="text" name="" id="search" placeholder="Busque por um modelo...">
+    </div>
+    <div class="contato">
+      <a href=""><span class="fab fa-whatsapp" aria-hidden="true"></span> CONTATO</a>
+      <a href=""><span class="fa fa-question-circle"></span> AJUDA</a>
+    </div>
+  </div>
+  <div class="line-2">
+    <p class="categorias" id="categorias"><span class="fa fa-bars"></span> CATEGORIAS</p>
+    <ul>
+      <li><a href="">DESTAQUES</a></li>
+      <li><a href="">FIGURES</a></li>
+      <li><a href="">MASCARAS</a></li>
+      <li><a href="">QUADROS</a></li>
+      <li><a href="">SUPORTES</a></li>
+      <li><a href="">PERSONALIZADOS</a></li>
+    </ul>
+    <span class="espaco-vazio"></span>
+  </div>
+</nav>
 
 <style>
   nav {
@@ -18,13 +50,15 @@
     font-weight: bold;
     padding-top: 15px;
   }
-
+  
   .line-1 a {
+    display: flex;
     color: white;
     transition: transform 0.2s;
     margin-top: 15px;
     text-decoration: none;
     cursor: pointer;
+    text-align: center;
   }
 
   .line-1 .home a:hover {
@@ -152,34 +186,3 @@
     }
   }
 </style>
-
-<div class="scroller-fade">
-  <div class="conteudo-fade">No ato da primeira compra o frete será gratuito com direito a um brinde!</div>
-</div>
-
-<nav>
-  <div class="line-1">
-    <p class="home">
-      <a href="#home">ANDROMEDA STUDIO</a>
-    </p>
-    <div class="input">
-      <input type="text" name="" id="search" placeholder="Busque por um modelo...">
-    </div>
-    <div class="contato">
-      <a href=""><span class="fab fa-whatsapp" aria-hidden="true"></span> CONTATO</a>
-      <a href=""><span class="fa fa-question-circle"></span> AJUDA</a>
-    </div>
-  </div>
-  <div class="line-2">
-    <p class="categorias" id="categorias"><span class="fa fa-bars"></span> CATEGORIAS</p>
-    <ul>
-      <li><a href="">DESTAQUES</a></li>
-      <li><a href="">FIGURES</a></li>
-      <li><a href="">MASCARAS</a></li>
-      <li><a href="">QUADROS</a></li>
-      <li><a href="">SUPORTES</a></li>
-      <li><a href="">PERSONALIZADOS</a></li>
-    </ul>
-    <span class="espaco-vazio"></span>
-  </div>
-</nav>

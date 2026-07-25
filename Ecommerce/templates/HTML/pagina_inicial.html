@@ -9,19 +9,19 @@
 
       <div class="nivel">
         <div class="item">
-          <a href="#"><img src="{% static "img/banner1.webp" %}"></a>
+          <a href=""><img src="{% static "img/banner1.webp" %}"></a>
         </div>
       </div>
       
       <div class="nivel">
         <div class="item">
-          <a href="#"><img src="{% static "img/banner2.webp" %}"></a>
+          <a href=""><img src="{% static "img/banner2.webp" %}"></a>
         </div>
       </div>
 
       <div class="nivel">
         <div class="item">
-          <a href="#"><img src="{% static "img/banner3.webp" %}"></a>
+          <a href=""><img src="{% static "img/banner3.webp" %}"></a>
         </div>
       </div>
 
@@ -32,14 +32,14 @@
 <section class="destaque">
   <h2>Novidades 🔥</h2>
   <div class="destaque-novidades">
-    <div class="item">
+    <a href="{% url "app-ecommerce:pagina_produto" %}" class="item">
       <img src="{% static "img/rockbalboa.webp" %}" alt="">
       <div class="nome-item">ADICIONAR AO CARRINHO</div>
       <div class="destaque-nome-curto">
         <p>Rock BALBOA FILME NETFLIX escala 1/10 </p>
         <span class="destaque-item-valor">R$ 29.99</span>
       </div>
-    </div>
+    </a>
 
     <div class="item">
       <img src="{% static "img/rockbalboa.webp" %}" alt="">

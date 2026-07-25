@@ -1,0 +1,31 @@
+{% extends "global/base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static "css/produto.css" %}">
+
+<div class="container">
+    <div id="lista-imagens" class="lista-imagens"></div>
+    <div class="visualizacao">
+        <img src="{% static "img/fusca-teste/imagem1.jpg" %}" id="imagem-grande">
+    </div>
+    <div id="zoom-container" class="zoom-container">
+        <img id="imagem-zoom" src="{% static "img/fusca-teste/imagem1.jpg" %}">
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const listaImagens = document.getElementById('lista-imagens');
+    const numImagens = 6;
+    for (let i = 1; i < numImagens; i++) {
+        const img = document.createElement('img');
+        img.src = '{% static "img/fusca-teste/imagem${i}.jpg" %}'
+        img.classList.add('miniatura');
+        img.onmouseover = () => mostrarImagem(img.src)
+        listaImagens.appendChild(img);
+    }
+});
+</script>
+<script src="{% static "js/produto.js" %}"></script>
+{% endblock content %}
