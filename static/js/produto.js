@@ -14,7 +14,7 @@ document.getElementById('imagem-grande').addEventListener('mousemove', function 
     const xPercent = (x / rect.width) * 100;
     const yPercent = (y / rect.height) * 100;
     zoomImagem.style.transformOrigin = `${xPercent}% ${yPercent}%`
-    zoomImagem.style.transform = `scale(2)`;
+    zoomImagem.style.transform = `scale(3)`;
     zoomContainer.style.display = 'block';
 });
 
@@ -23,4 +23,16 @@ document.getElementById('imagem-grande').addEventListener('mouseleave', function
     zoomImagem.style.transform = 'scale(1)'
     const zoomField = document.getElementById('zoom-container');
     zoomField.style.display = 'none';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const listaImagens = document.getElementById('lista-imagens');
+    const numImagens = 6;
+    for (let i = 1; i < numImagens; i++) {
+        const img = document.createElement('img');
+        img.src = `../static/img/fusca-teste/imagem${i}.jpg`
+        img.classList.add('miniatura');
+        img.onmouseover = () => mostrarImagem(img.src)
+        listaImagens.appendChild(img);
+    }
 });
