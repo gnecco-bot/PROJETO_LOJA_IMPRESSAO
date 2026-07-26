@@ -6,7 +6,7 @@ function mostrarImagem(caminho) {
 }
 
 document.getElementById('imagem-grande').addEventListener('mousemove', function (e) {
-    const zoomContainer = document.getElementById('zoom-container');
+    const zoomField = document.getElementById('zoom-container');
     const zoomImagem = document.getElementById('imagem-zoom');
     const rect = this.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -14,8 +14,8 @@ document.getElementById('imagem-grande').addEventListener('mousemove', function 
     const xPercent = (x / rect.width) * 100;
     const yPercent = (y / rect.height) * 100;
     zoomImagem.style.transformOrigin = `${xPercent}% ${yPercent}%`
-    zoomImagem.style.transform = `scale(3)`;
-    zoomContainer.style.display = 'block';
+    zoomImagem.style.transform = `scale(3.3)`;
+    zoomField.style.display = 'block';
 });
 
 document.getElementById('imagem-grande').addEventListener('mouseleave', function () {

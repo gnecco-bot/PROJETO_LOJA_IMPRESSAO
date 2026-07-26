@@ -4,13 +4,39 @@
 {% block content %}
 <link rel="stylesheet" href="{% static "css/produto.css" %}">
 
-<div class="container-imagem">
-    <div id="lista-imagens" class="lista-imagens"></div>
-    <div class="visualizacao">
-        <img src="{% static "img/fusca-teste/imagem1.jpg" %}" id="imagem-grande">
+<div class="container-produto">
+    <div class="container-imagem">
+        <div id="lista-imagens" class="lista-imagens"></div>
+        <div class="visualizacao">
+            <img src="{% static "img/fusca-teste/imagem1.jpg" %}" id="imagem-grande">
+        </div>
+        <div id="zoom-container" class="zoom-container">
+            <img id="imagem-zoom" src="{% static "img/fusca-teste/imagem1.jpg" %}">
+        </div>
     </div>
-    <div id="zoom-container" class="zoom-container">
-        <img id="imagem-zoom" src="{% static "img/fusca-teste/imagem1.jpg" %}">
+
+    <div class="container-detalhes">
+        <div class="titulo"><p>JINX LEAGUE OF LEGENDS TAMANHO REAL PINTURA FEITA A MAO</p></div>
+        
+        <div class="opcoes">
+            <ul>
+                <li>teste 1</li>
+                <li>teste 2</li>
+                <li>teste 3</li>
+                <li>teste 4</li>
+                <li>teste 5</li>
+            </ul>
+        </div>
+        
+        <div class="preco">
+            <h2>R$ 499,00</h2>
+        </div>
+
+        <div class="comprar-carrinho">
+            <button class="carrinho">ADICIONAR AO CARRINHO</button>
+            <button class="comprar">COMPRAR</button>
+        </div>
+        </div>
     </div>
 </div>
 
